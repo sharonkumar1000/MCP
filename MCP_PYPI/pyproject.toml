@@ -1,0 +1,23 @@
+
+[project]
+name = "agentic-terminal"
+version = "0.1.0"
+description = "An MCP which adds terminal capabilities to an Agent"
+readme = "README.md"
+authors = [
+    { name = "sharonkumar1000", email = "sharonkumar1000@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=4.1.2",
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+agentic_terminal = "agentic_terminal.main:main"
